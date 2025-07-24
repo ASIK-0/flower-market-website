@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Font style */
+.inter-font {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* shared styles */
+body{
+  margin: 0;
+}
+.display-flex{
+  display: flex;
+}
+.menu-color{
+  color:#8987A1 ;
+}
+/* title color */
+.primary-color{
+  color: #E95A08;
+}
+/* description color */
+.secondary-color{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.4rem;
+}
+/* header styles */
+
+/* navbar related styles */
+.navbar{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.logo{
+  border: none;
+  max-width: 100%;
+}
+.navbar, .menu-items,.banner{
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-items{
+  list-style: none;
+  gap: 48px ;
+  padding: 0;
+}
+.menu-home{
+  font-weight:bold;
+  font-size: 1rem;
+  color: #252432;
+  width: 415px;
+  height: 60px;
+}
+.menu-cart{
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  white-space: nowrap;
+  gap: 10px;
+}
+.nav-link{
+  text-decoration: none;
+}
+/* banner related style */
+.banner{
+  max-width: 1140px;
+  margin: 120px auto;
+  align-items: flex-end;
+}                                     
+.banner-left{
+  gap: 13px;
+
+}
+.banner-title{
+  font-size: 4rem ;
+  margin: 0;
+}
+.banner-description{
+  font-size: 1.4rem;
+  margin: 0 auto;
+}
+/* main section */
+/* plant releted styles */
+main{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.our-plant{
+  text-align: center
+}
+.plant-title{
+  font-size: ;
+}
+
+
+
+
+/* media query for mobile device */
+@media screen and (max-width: 576px){
+  .r-mobile{
+    display: none;
+  }
+  .navbar{
+    margin: 13px 16px 0 16px ;
+  }
+  .banner{
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+  .banner-right{
+    margin: 28px 0 28px 0 ;
+  }
+  .banner-left{
+    margin: 0 16px 0 16px;
+  }
+  .banner-title{
+    font-size: 2rem;
+  }
+}
