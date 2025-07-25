@@ -42,9 +42,8 @@ body{
   max-width: 1140px;
   margin: 0 auto;
 }
-.logo{
-  border: none;
-  max-width: 100%;
+.nav-logo img{
+  width:100%;
 }
 .navbar, .menu-items,.banner{
   align-items: center;
@@ -67,7 +66,7 @@ body{
   font-size: 1rem;
   color: #000000;
   white-space: nowrap;
-  gap: 10px;
+  /* gap: 10px; */
 }
 .nav-link{
   text-decoration: none;
@@ -80,7 +79,7 @@ body{
 }                                     
 .banner-left{
   gap: 13px;
-
+  max-width: 570px;
 }
 .banner-title{
   font-size: 4rem ;
@@ -90,36 +89,41 @@ body{
   font-size: 1.4rem;
   margin: 0 auto;
 }
+.banner-img{
+  /* width: 100%; */
+}
 /* main section */
 /* plant releted styles */
-main{
-  max-width: 1140px;
-  margin: 0 auto;
-}
-.our-plant{
-  text-align: center
-}
-.plant-title{
-  font-size: ;
-}
-
 
 
 
 /* media query for mobile device */
 @media screen and (max-width: 576px){
+  /* nav */
   .r-mobile{
     display: none;
+  }
+  .nav-logo img{
+    min-width:45%;
+    max-width:100%;
+    margin: 0;
   }
   .navbar{
     margin: 13px 16px 0 16px ;
   }
-  .banner{
+  .menu-items{
+    gap: 0;
+  }
+  /* banner */
+    .banner{
     flex-direction: column-reverse;
     margin: 0 auto;
   }
   .banner-right{
     margin: 28px 0 28px 0 ;
+  }
+  .banner-img{
+    width: 100%;
   }
   .banner-left{
     margin: 0 16px 0 16px;
@@ -127,4 +131,6 @@ main{
   .banner-title{
     font-size: 2rem;
   }
+  /* main */
+  /*  */
 }
