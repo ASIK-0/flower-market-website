@@ -172,8 +172,33 @@ main{
   font-size: 1.375rem;
   margin: 10px 0;
 }
-
-
+/* footer */
+/* join section */
+.join-container{
+  background-image: url(./assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 190px 300px;
+  position:relative;
+}
+.container-name{
+  color: #FFFFFF;
+  font-size: 3.125rem ;
+  margin-bottom: 23px;
+}
+.input-container{
+  padding: 8px 20px;
+  font-size: 1rem;
+  flex: 1;
+  max-width:830px;
+  border: none;
+  font-weight: 400;
+}
+.join-input-box{
+  justify-content: center;
+}
 /* media query for mobile device */
 @media screen and (max-width: 576px){
   /* nav */
@@ -241,6 +266,20 @@ main{
   }
   .plant-lover-left img{
     width: 100%;
+  }
+  /* join section related style */
+  .join-container{
+    padding: 110px 36px 65px;
+  }
+  .container-name{
+    font-size: 1.25rem;
+  }
+  .input-container{
+    width: 100%;
+    padding: 8px 12px;
+  }
+  .sub-btn{
+    padding: 15px 10px;
   }
 
 }
