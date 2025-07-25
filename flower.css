@@ -27,8 +27,8 @@ body{
   font-weight: 600;
   font-size: 1rem;
   padding: 26px 50px;
+  white-space: nowrap;
   border: none;
-  /* white-space:nowrap; */
 }
 .display-flex{
   display: flex;
@@ -86,7 +86,7 @@ body{
   max-width: 1140px;
   margin: 120px auto;
   align-items: flex-end;
-}                                     
+}                              
 .banner-left{
   gap: 13px;
   max-width: 570px;
@@ -129,7 +129,6 @@ main{
 .plant-card{
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 .plant-card img{
   height: auto;
@@ -147,6 +146,33 @@ main{
   font-size: 1.375rem;
   margin: 10px auto 30px;
 }
+/* Flower & Plants Lover section */
+.plants-lover{
+  gap: 60px;
+  margin-top: 200px;
+}
+.plant-lover-left img{
+  /* width: 100%; */
+}
+.plant-lover-right{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.plant-lover-right ul{
+  margin: 0;
+
+}
+.plant-lover-title{
+  font-size: 3.125rem;
+  margin: 0;
+}
+.plant-lover-description{
+  font-size: 1.375rem;
+  margin: 10px 0;
+}
+
 
 /* media query for mobile device */
 @media screen and (max-width: 576px){
@@ -166,7 +192,7 @@ main{
     gap: 0;
   }
   /* banner */
-    .banner{
+  .banner{
     flex-direction: column-reverse;
     margin: 0 auto;
   }
@@ -185,6 +211,10 @@ main{
   .banner-description{
     font-size: 0.875rem;
   }
+  /* btn */
+  .btn-primary{
+    padding: 26px 0px;
+  }
   /* plants-card-section */
   .plant-title{
     font-size: 2.0625rem;
@@ -195,7 +225,7 @@ main{
     font-weight: 400;
     padding: 0 34px;
   }
-  .plant-card img{
+  .plant-card{
     height: auto;
     width: 100%;
   }
@@ -203,4 +233,14 @@ main{
   grid-template-columns: repeat(2,1fr);
   margin: 0 14px;
   }
+  /* plants lover section */
+  .plants-lover{
+    flex-direction: column;
+    margin: 35px 15px 130px;
+    gap: 0;
+  }
+  .plant-lover-left img{
+    width: 100%;
+  }
+
 }
